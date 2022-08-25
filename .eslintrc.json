@@ -17,6 +17,10 @@
         "react"
     ],
     "rules": {
-        "extensions": [".js", ".jsx"]
+        "import/extensions": [1, "always", { "js" : "ignorePackages"}],
+        "react/function-component-definition": [1, {
+            "namedComponents": ["function-declaration","function-expression", "arrow-function"]
+          }],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }
